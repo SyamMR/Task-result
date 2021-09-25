@@ -1,0 +1,22 @@
+<section>
+    <div class="container">
+        <div class="row pt-5 mt-5">
+
+
+            <div class="col-md-6">
+     
+                <form action="/edit-product/{{product._id}}" method="POST">
+                    <label for="">Name</label>
+                    <input type="text" name="Name" class="form-control" value="{{product.Name}}">
+                    <label for="">Catagory</label>
+                    <input type="text" name="Catagory" class="form-control"  value="{{product.Catagory}}">
+                    <label for="">Prize</label>
+                    <input type="text" name="Prize" class="form-control"  value="{{product.Prize}}">
+                    <label for="">Description</label>
+                    <input type="text" name="Description" class="form-control"  value="{{product.Description}}">
+                    <button type="submit" class="btn btn-success mt-4 ">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
